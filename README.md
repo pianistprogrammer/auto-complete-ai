@@ -11,9 +11,6 @@ This project implements a text auto-complete feature using Ollama, providing a n
 - Auto-complete suggestions are integrated directly into the same text input, making the user experience seamless.
 - The input field dynamically adjusts its width to be twice the width of the `<h1>` text for consistency.
 
-## Demo
-
-Visit [your live demo URL] to see the auto-complete feature in action.
 
 ## Installation
 
@@ -26,7 +23,7 @@ To run the project locally, follow the steps below:
 ### Steps:
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/auto-complete-ai.git
+    git clone https://github.com/pianistprogrammer/auto-complete-ai.git
     ```
    
 2. Navigate into the project directory:
