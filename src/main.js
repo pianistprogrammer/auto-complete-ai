@@ -1,3 +1,4 @@
+const INPUT_DELAY = 600; // Delay in milliseconds before sending the input to the model
 const PROMPT_TEMPLATE = `### Task:
 You are an autocompletion system. Continue the text in \`<text>\` up to 8 words based on the **completion type** in \`<type>\` and the given language.  
 ### **Instructions**:
@@ -105,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     inputElement.addEventListener('input', (e) => {
         clearTimeout(typingTimer);
-        typingTimer = setTimeout(handleInput, 600);
+        typingTimer = setTimeout(handleInput, INPUT_DELAY);
     });
 
     inputElement.addEventListener('keydown', () => {
