@@ -38,7 +38,9 @@ To run the project locally, follow the steps below:
 
 4. Optionally, you can serve the project using a local server, like `Live Server` in VSCode, to see real-time changes.
 
-5. Serve the project `npm run dev`
+5. Install the dependencies `npm install`
+
+6. Serve the project `npm run dev`
 
 ## File Structure
 
