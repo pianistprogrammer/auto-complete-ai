@@ -26,7 +26,7 @@ To run the project locally, follow the steps below:
 ### Steps:
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/auto-autocomplete-ai.git
+    git clone https://github.com/your-username/auto-complete-ai.git
     ```
    
 2. Navigate into the project directory:
@@ -38,9 +38,13 @@ To run the project locally, follow the steps below:
 
 4. Optionally, you can serve the project using a local server, like `Live Server` in VSCode, to see real-time changes.
 
-5. Install the dependencies `npm install`
+5. Install the dependencies 
 
-6. Serve the project `npm run dev`
+    `npm install`
+
+6. Serve the project 
+
+    `npm run dev`
 
 ## File Structure
 
