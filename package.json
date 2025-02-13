@@ -1,0 +1,19 @@
+{
+  "name": "auto-complete-ai",
+  "version": "1.0.0",
+  "main": "src/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "description": "",
+  "dependencies": {
+    "ollama": "^0.5.13",
+    "vite": "^6.1.0"
+  }
+}

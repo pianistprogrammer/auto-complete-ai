@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+}
+
+#userInput {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    line-height: 1.4;
+    background: transparent;
+    z-index: 1;
+    width: 100%; /* Default width */
+}
+
+#suggestion {
+    color: #666;
+    position: absolute;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    white-space: pre;
+    overflow: hidden;
+    width: 100%;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+#suggestion span:first-child {
+    visibility: hidden;
+    position: relative;
+}
+
+#suggestion span:last-child {
+    color: #666;
+    margin-left: 2px;
+}
