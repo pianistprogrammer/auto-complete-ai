@@ -36,18 +36,29 @@ Output:
 
 async function getCompletion(text) {
     try {
-        const response = await fetch('/api/v1/generate/gorefine-autocomplete', {
+        const response = await fetch('/api/chat', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                text: text
+                model: 'llama3.2:latest',
+                messages: [{
+                    role: 'user',
+                    content: PROMPT_TEMPLATE.replace('{{TEXT}}', text)
+                }],
+                stream: false
             })
         });
 
         const data = await response.json();
-        return data.text || '';
+        try {
+            const completion = JSON.parse(data.message.content);
+            return completion.text || '';
+        } catch (e) {
+            console.error('Failed to parse completion:', e);
+            return '';
+        }
     } catch (error) {
         console.error('Error getting completion:', error);
         return '';

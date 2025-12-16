@@ -5,7 +5,7 @@ export default defineConfig({
     port: 5100,
     proxy: {
       '/api': {
-        target: 'http://127.0.0.1:11434',  // Pointing to your Ollama server
+        target: 'http://127.0.0.1:8003',  // Pointing to your Ollama server
         changeOrigin: true,
         // Don't rewrite since the endpoint already starts with /api
         rewrite: (path) => path
